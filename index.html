@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.css">
+</head>
+<body>
+    <table class="drr-table">
+        <tr>
+            <th>Start date</th>
+            <th>End date</th>
+            <th>month , year</th>
+            <th>Excluded Dates</th>
+            <th>Number of days</th>
+            <th>Lead Count</th>
+            <th>Expected DRR</th>
+            <th>Last Updated</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="start-date-picker"></td>
+            <td><input type="text" id="end-date-picker"></td>
+            <td id="month"></td>
+            <td><input type="text" id="excluded-dates"></td>
+            <td><p id="number-of-days"></p></td>
+            <td><input type="number" id="lead-count"></td>
+            <td><p id="DRR"></p></td>
+            <td id="update-time">    </td>
+        </tr>
+        
+    </table>
+    <button id="update-button">Save</button>
+    <table class="drr-table" id="update-time-table">
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.6/dist/flatpickr.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
